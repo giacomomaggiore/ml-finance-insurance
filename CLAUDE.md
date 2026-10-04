@@ -4,12 +4,14 @@ This repository contains project solutions for the ETH course *Machine Learning 
 
 ## Structure
 
-- Each numbered project folder contains `data/`, `slides/`, `helpers/`, `status.md`, and its main notebook.
+- Each numbered project folder contains `data/`, `slides/`, `helpers/`, `output/`,  `status.md`, and its main notebook.
 - Main notebooks are named `1-main.ipynb`, `2-main.ipynb`, and so on and they contain a template made by professor, so never change the template cells, just place relevant code and report and submissions
 - Professor-provided data and slides are source material: do not modify them.
 - Put additional project files under `helpers/`.
+- all the output (images, analysis or additional files) should be exported in `output/`
 - Each project folder contains an `assignment.md` file with the professor's assignment requests. Read it before working on the project and use it as the source of truth for required tasks.
 - Update the project's `status.md` with short, meaningful bullet points after substantial work.
+- 
 
 ## Answering guidelines 
 
@@ -28,5 +30,5 @@ This repository contains project solutions for the ETH course *Machine Learning 
 - Avoid unnecessary duplication and use small reusable helper functions where appropriate.
 - Classes or object-oriented design are not required.
 - Use clear English in Markdown, output, and variable names.
-- Add short comments for non-obvious reasoning, important assumptions, or surprising results.
+- Add short comments for non-obvious reasoning, important assumptions, or surprising results
 - Avoid redundant comments and code.
