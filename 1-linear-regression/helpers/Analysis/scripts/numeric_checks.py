@@ -1,12 +1,12 @@
-"""Numerical checks for Project 1 — backs the statements in Analysis/4_Plan_and_Decisions.md.
+"""Numerical checks for Project 1 — backs the statements in helpers/Analysis/4_Plan_and_Decisions.md.
 
 These are PROTOTYPE CHECKS on the split with random_state=42, used to choose the
 approach and the grid ranges. They are not the submission.
 
-Run:     python "Analysis/scripts/numeric_checks.py"          (about 7 minutes on 4 CPU cores; the Elastic Net scan is the slow part)
-Writes:  Analysis/scripts/outputs/numeric_checks.txt
-         Analysis/scripts/outputs/cv_scan_<method>.csv
-         Analysis/figures/cv_curves.png
+Run:     python "helpers/Analysis/scripts/numeric_checks.py"          (about 7 minutes on 4 CPU cores; the Elastic Net scan is the slow part)
+Writes:  helpers/Analysis/scripts/outputs/numeric_checks.txt
+         helpers/Analysis/scripts/outputs/cv_scan_<method>.csv
+         helpers/Analysis/figures/cv_curves.png
 """
 import time
 import warnings

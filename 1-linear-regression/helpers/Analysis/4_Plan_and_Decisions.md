@@ -1,6 +1,6 @@
 # Project 1 — Plan, decisions and checks
 
-This file turns the analysis into a work plan for the notebook. Each "step" has the same label as a cell (and a `PREP NOTE`) in `Project1_Notebook.ipynb`.
+This file turns the analysis into a work plan for the notebook. Each "step" has the same label as a cell (and a `PREP NOTE`) in `1-main.ipynb`.
 
 - **How** = how to do it · **Show** = what must be visible · **Check** = numbers from the prototype runs (split `random_state=42`, from `scripts/numeric_checks.py`) · **Answer points** = the arguments the written answer should contain. The points are material for the answers, not the final wording.
 - The **Check** numbers are only there to verify the code. They are **never** a reason to choose a model: the 8-fold CV chooses, and the test set only confirms at the end.
@@ -245,7 +245,7 @@ Write them once, near the top of the notebook (after Setup), each with a one-lin
 - **No warnings in the final outputs** (e.g. `ConvergenceWarning`): fix the cause (`max_iter`). Do not hide warnings globally.
 - **Checks as `assert`s** (shapes, identical columns, the 1.d = pipeline match): short and convincing.
 - **Every answer next to its code**, 3–8 short sentences, with the numbers that support it. The report then only **synthesizes**.
-- **Total run time** below about 10 minutes (keep the Elastic Net grid slim). Check with `Analysis/scripts/run_notebook.py`.
+- **Total run time** below about 10 minutes (keep the Elastic Net grid slim). Check with `helpers/Analysis/scripts/run_notebook.py`.
 
 ## 5. Pitfalls that fail silently
 

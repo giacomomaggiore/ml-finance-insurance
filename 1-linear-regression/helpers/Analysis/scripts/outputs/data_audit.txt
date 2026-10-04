@@ -143,4 +143,4 @@ after Question 1.d: train (1022, 311), test (438, 311); test levels never seen i
 training modes used for the missing categorical values: {'MasVnrType': 'None', 'Electrical': 'SBrkr', 'BsmtExposure': 'No', 'BsmtFinType2': 'Unf'}
 training means used for the missing numerical values: {'LotFrontage': 70.4, 'MasVnrArea': 105.3, 'GarageYrBlt': 1978.7}
 
-figure written: /Users/ugobuzzacchino/Desktop/University/Master/ETH/Semester 2/Machine Learning/Projects/Project 1, Linear Regression/Solution Project 1/Analysis/figures/target_distribution.png
+figure written: 1-linear-regression/helpers/Analysis/figures/target_distribution.png

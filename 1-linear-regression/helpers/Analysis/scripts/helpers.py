@@ -1,6 +1,6 @@
 """Shared helpers for the preparation analysis of Project 1.
 
-These scripts only VERIFY the facts written in the Analysis/*.md files.
+These scripts only VERIFY the facts written in the helpers/Analysis/*.md files.
 They are not the submission: the submitted notebook must be self-contained,
 so the notebook will define its own (cleaned-up) versions of these helpers.
 """
@@ -15,11 +15,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline, make_pipeline
 from sklearn.preprocessing import FunctionTransformer, OneHotEncoder, StandardScaler
 
-ROOT = Path(__file__).resolve().parents[2]          # .../Solution Project 1
-DATA_FILE = ROOT / "Housing.csv"
-DESCRIPTION_FILE = ROOT / "data_description.txt"
+ROOT = Path(__file__).resolve().parents[3] # .../1-linear-regression
+DATA_FILE = ROOT / "data" / "Housing.csv"
+DESCRIPTION_FILE = ROOT / "data" / "data_description.txt"
 OUT_DIR = Path(__file__).resolve().parent / "outputs"
-FIG_DIR = ROOT / "Analysis" / "figures"
+FIG_DIR = ROOT / "helpers" / "Analysis" / "figures"
 
 SEED, TEST_SIZE, N_FOLDS = 42, 0.30, 8
 

@@ -1,8 +1,8 @@
-"""Data audit for Project 1 — reproduces every number in Analysis/2_Data_Findings.md.
+"""Data audit for Project 1 — reproduces every number in helpers/Analysis/2_Data_Findings.md.
 
-Run from anywhere:  python "Analysis/scripts/data_audit.py"
-Writes:  Analysis/scripts/outputs/data_audit.txt
-         Analysis/figures/target_distribution.png
+Run from anywhere:  python "helpers/Analysis/scripts/data_audit.py"
+Writes:  helpers/Analysis/scripts/outputs/data_audit.txt
+         helpers/Analysis/figures/target_distribution.png
 """
 import matplotlib
 matplotlib.use("Agg")

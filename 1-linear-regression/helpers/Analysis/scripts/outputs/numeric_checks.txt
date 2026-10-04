@@ -113,4 +113,4 @@ TruncatedPI best {'svd__n_components': 150} | CV MSE 0.02280 ± 0.00914 | 11 s |
             fold MSEs at the best value: [0.0203, 0.0178, 0.0165, 0.0154, 0.046, 0.021, 0.0217, 0.0237]
             refitted model: test log MSE 0.02062  (for orientation only — never used to choose)
 
-figure written: /Users/ugobuzzacchino/Desktop/University/Master/ETH/Semester 2/Machine Learning/Projects/Project 1, Linear Regression/Solution Project 1/Analysis/figures/cv_curves.png
+figure written: 1-linear-regression/helpers/Analysis/figures/cv_curves.png

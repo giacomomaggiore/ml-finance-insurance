@@ -4,8 +4,8 @@ Why this script: `jupyter nbconvert` from miniconda fails on this Mac (a config 
 to a missing extension), so notebooks are executed with nbclient directly.
 
 Run with miniconda's python (it has nbformat and nbclient), from anywhere:
-    ~/miniconda3/bin/python "Analysis/scripts/run_notebook.py"            # check only: runs a copy
-    ~/miniconda3/bin/python "Analysis/scripts/run_notebook.py" --save     # run and SAVE the outputs
+    ~/miniconda3/bin/python "helpers/Analysis/scripts/run_notebook.py"            # check only: runs a copy
+    ~/miniconda3/bin/python "helpers/Analysis/scripts/run_notebook.py" --save     # run and SAVE the outputs
                                                                           # into the notebook (for submission)
 Options: --kernel NAME (default: jupyter-env = the "Python 3.13 (venv)" kernel)
 
@@ -20,8 +20,8 @@ import nbformat
 from nbclient import NotebookClient
 from nbclient.exceptions import CellExecutionError
 
-ROOT = Path(__file__).resolve().parents[2]
-NOTEBOOK = ROOT / "Project1_Notebook.ipynb"
+ROOT = Path(__file__).resolve().parents[3]
+NOTEBOOK = ROOT / "1-main.ipynb"
 kernel = sys.argv[sys.argv.index("--kernel") + 1] if "--kernel" in sys.argv else "jupyter-env"
 save = "--save" in sys.argv
 

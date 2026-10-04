@@ -6,7 +6,7 @@ Run with miniconda's python (it needs nbformat):  ~/miniconda3/bin/python build_
 The TA's guidance comments are copied VERBATIM from 'Project1 - Template.ipynb' and split
 into one code cell per sub-question. Added: a setup cell, short headings, answer
 placeholders where the assignment asks for text, and 'PREP NOTE' comments (to be deleted
-before submission) that point to Analysis/4_Plan_and_Decisions.md.
+before submission) that point to helpers/Analysis/4_Plan_and_Decisions.md.
 """
 import re
 import sys
@@ -14,9 +14,9 @@ from pathlib import Path
 
 import nbformat as nbf
 
-PROJ = Path("/Users/ugobuzzacchino/Desktop/University/Master/ETH/Semester 2/Machine Learning/Projects/Project 1, Linear Regression")
-TEMPLATE = PROJ / "Data" / "Project1 - Template.ipynb"
-OUT = PROJ / "Solution Project 1" / "Project1_Notebook.ipynb"
+PROJ = Path(__file__).resolve().parents[3]
+TEMPLATE = PROJ / "data" / "solution.ipynb"
+OUT = PROJ / "1-main.ipynb"
 if OUT.exists() and "--force" not in sys.argv:
     sys.exit(f"{OUT.name} already exists and may contain your work. Re-run with --force to overwrite it.")
 
@@ -45,7 +45,7 @@ q3 = dict(zip(q3_keys, chunks(src[9], ["# 3.a)", "# 3.b) Implement", "# 3.b.i)",
                                        "# 3.b.iv)", "# 3.b.v)", "# 3.b) REQUIRED SUMMARY TABLE",
                                        "# Why is it important", "# 3.c)", "# 3.d)", "# 3.e)"])))
 
-PLAN = "Analysis/4_Plan_and_Decisions.md"
+PLAN = "helpers/Analysis/4_Plan_and_Decisions.md"
 
 
 def note(step, *lines):
@@ -92,8 +92,8 @@ from sklearn.preprocessing import FunctionTransformer, OneHotEncoder, StandardSc
 SEED = 42          # fixed once, before looking at any result: used for the split, the CV folds and TruncatedSVD
 TEST_SIZE = 0.30   # 70% training / 30% test (Question 1.c)
 N_FOLDS = 8        # 8-fold cross-validation with the same folds for every method (Question 3.b)
-DATA_FILE = "Housing.csv"
-DESCRIPTION_FILE = "data_description.txt"
+DATA_FILE = "data/Housing.csv"
+DESCRIPTION_FILE = "data/data_description.txt"
 
 pd.set_option("display.max_columns", 60)
 print(f"pandas {pd.__version__} | numpy {np.__version__} | scipy {scipy.__version__} | "
@@ -114,7 +114,7 @@ code("# Helper functions, each with a one-line docstring (plan: section 2 of " +
      "#   grid_edges(search, grid)     -> selected values on the edge of the grid?\n"
      "#   cv_summary(search)           -> best params, mean CV MSE (sign flipped) and its std"
      + note("2", "Tested reference versions of parse_description, load_raw (= load_housing), recode_missing,",
-            "prepare_manual (= prepare_features) and make_preprocessor are in Analysis/scripts/helpers.py.",
+            "prepare_manual (= prepare_features) and make_preprocessor are in helpers/Analysis/scripts/helpers.py.",
             "Adapt them here; the submitted notebook must not import from the Analysis folder."))
 
 # --- Question 1 ---------------------------------------------------------------------------

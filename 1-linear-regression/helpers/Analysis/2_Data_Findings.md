@@ -37,7 +37,7 @@ In this file the string `NA` has two meanings. For 14 variables the description 
 **Safe way to read the file:**
 
 ```python
-pd.read_csv("Housing.csv", index_col="Id", keep_default_na=False,
+pd.read_csv("data/Housing.csv", index_col="Id", keep_default_na=False,
             na_values={col: ["NA"] for col in NUMERICAL})   # only numerical 'NA' -> NaN
 ```
 

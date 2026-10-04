@@ -125,4 +125,4 @@ Concise. It must **synthesize**, not repeat every cell. Six parts, in this order
 - [ ] The test set used only for the final evaluation (say so in the report).
 - [ ] Project Report with the six headings, after all questions.
 - [ ] Notebook opens and reads well; figures have titles and axis labels.
-- [ ] Only the notebook is submitted (plus whatever Moodle asks for). It reads `Housing.csv` from its own folder.
+- [ ] Only the notebook is submitted (plus whatever Moodle asks for). It reads `data/Housing.csv` from the project folder.
