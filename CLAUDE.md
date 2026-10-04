@@ -4,31 +4,30 @@ This repository contains project solutions for the ETH course *Machine Learning 
 
 ## Structure
 
-- Each numbered project folder contains `data/`, `slides/`, `helpers/`, `output/`,  `status.md`, and its main notebook.
-- Main notebooks are named `1-main.ipynb`, `2-main.ipynb`, and so on and they contain a template made by professor, so never change the template cells, just place relevant code and report and submissions
-- Professor-provided data and slides are source material: do not modify them.
+- Each numbered project folder contains `data/`, `slides/`, `helpers/`, `output/`, `status.md`, and its main notebook.
+- Main notebooks are named `1-main.ipynb`, `2-main.ipynb`, and so on. They contain templates prepared by the professor. Do not change the template cells; add only the relevant code, reports, and submissions.
+- Professor-provided data and slides are source material; do not modify them.
 - Put additional project files under `helpers/`.
-- all the output (images, analysis or additional files) should be exported in `output/`
-- Each project folder contains an `assignment.md` file with the professor's assignment requests. Read it before working on the project and use it as the source of truth for required tasks.
+- Export all output (images, analyses, and additional files) to `output/`.
+- Each project folder contains an `assignment.md` file with the professor's assignment requirements. Read it before working on the project and use it as the source of truth for required tasks.
 - Update the project's `status.md` with short, meaningful bullet points after substantial work.
-- 
 
-## Answering guidelines 
+## Answering guidelines
 
-- For each transwer, write the minimum lines to make it comprensible and provide a clear understanding.
-- don't be redundant
-- prefer bullet points and simple english
-- be schematic and linear
+- For each answer, write the minimum number of lines needed to be comprehensible and provide a clear explanation.
+- Do not be redundant.
+- Prefer bullet points and simple English.
+- Be schematic and linear.
 
 
 ## Code style
 
 - This is university coursework, not production software.
-- do not write useless or redundant code, refer strictly to the task
+- Do not write useless or redundant code; adhere strictly to the task.
 - Prefer simple, linear, readable code over abstractions and unnecessary complexity.
 - Keep analysis readable and reproducible.
 - Avoid unnecessary duplication and use small reusable helper functions where appropriate.
 - Classes or object-oriented design are not required.
 - Use clear English in Markdown, output, and variable names.
-- Add short comments for non-obvious reasoning, important assumptions, or surprising results
+- Add short comments for non-obvious reasoning, important assumptions, or surprising results.
 - Avoid redundant comments and code.
