@@ -1,0 +1,5 @@
+sample,target_scale,MSE,R2
+In-sample,log1p(SalePrice),0.02200,0.85810
+Out-of-sample,log1p(SalePrice),0.02187,0.87109
+In-sample,SalePrice (USD),1433790871.39794,0.76177
+Out-of-sample,SalePrice (USD),829116179.68428,0.88118
