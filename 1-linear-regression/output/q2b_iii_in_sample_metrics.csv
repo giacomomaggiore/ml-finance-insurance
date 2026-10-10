@@ -1,3 +1,3 @@
 target_scale,MSE_matrix_algebra,MSE_sklearn_2a,R2_matrix_algebra,R2_sklearn_2a
-log1p(SalePrice),0.02200,0.02200,0.85810,0.85810
-SalePrice (USD),1433790871.39802,1433790871.39795,0.76177,0.76177
+log1p(SalePrice),0.01486,0.01486,0.90433,0.90433
+SalePrice (USD),517444353.67217,517444353.67215,0.91423,0.91423

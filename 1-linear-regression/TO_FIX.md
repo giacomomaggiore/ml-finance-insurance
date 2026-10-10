@@ -165,3 +165,9 @@ No cells were added, removed or moved. Professor content is unchanged (checked l
   - 3.d: one dict for the model coefficients instead of three repeated lines.
   - 3.e: notes that the paired SE understates the uncertainty, because folds share training data.
 - Run time is now about 2 min (larger Elastic Net grid).
+
+**Round 10 – Checking for outliers on the training data**
+
+Check for outliers before the training so we actually train the model on the correct data without outliers
+
+- MUST FIX: The regression with categorical data also accounts for outliers while the numerical filters them out. 

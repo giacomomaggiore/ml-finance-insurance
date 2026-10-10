@@ -1,5 +1,5 @@
 Model,Selected hyperparameter(s),Mean CV MSE,Std CV MSE,Train MSE,Train R²,Test MSE,Test R²
-OLS: numerical only,--,--,--,"1,433,790,871",0.7618,"829,116,180",0.8812
+OLS: numerical only,--,--,--,"11,597,656,947",-0.9270,"529,540,398",0.9241
 OLS: all features,--,--,--,"291,430,340",0.9516,"880,885,573",0.8738
 Truncated pseudoinverse,n_components = 150,0.02281,0.00906,"565,788,140",0.9060,"691,717,575",0.9009
 Ridge,alpha = 17.78,0.02252,0.01124,"601,558,822",0.9000,"632,575,164",0.9093
